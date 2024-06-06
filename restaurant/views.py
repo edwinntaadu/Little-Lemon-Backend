@@ -10,8 +10,8 @@ from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
 from datetime import datetime
 from .forms import BookingForm
-from .models import Menu, Booking
-from .serializers import MenuSerializer, BookingSerializer
+from .models import Menu, Booking, Category
+from .serializers import MenuSerializer, BookingSerializer,CategorySerializer
 
 # Create your views here.
 def home(request): 
@@ -86,16 +86,22 @@ class BookingViewSet(viewsets.ModelViewSet):
     serializer_class = BookingSerializer
 
 
-class MenuItemsView(generics.ListCreateAPIView):
+class MenuItemsViewSet(viewsets.ModelViewSet):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
+    
+#class MenuItemsView(generics.ListCreateAPIView):
+#    queryset = Menu.objects.all()
+#    serializer_class = MenuSerializer
     
     
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
-
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
     
 
 #class UserViewSet(viewsets.ModelViewSet):
