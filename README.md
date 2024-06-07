@@ -10,6 +10,8 @@ This also includes djoser auth/ endpoints provided by the djoser library.
   <h4><ins>My API endpoints:</ins></h4>
   <li>restaurant/menu-items/ POST GET </li>
   <li>restaurant/menu-items/<int:pk> GET PUT PATCH DELETE</li>
+  <li>restaurant/categories/ POST GET </li>
+  <li>restaurant/categories/<int:pk> GET PUT PATCH DELETE </li>
   <h4>Bookings view api: requires authentication</h4>
   <li>restaurant/booking/ POST GET</li>
   <li>restaurant/booking/<int:pk> GET PUT PATCH DELETE</li>
