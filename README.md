@@ -1,7 +1,8 @@
 # LittleLemon-Web-Application
 
 <h2> Capstone project (back-end)</h2>
-<h4>The capstone project is based on a scenario involving the Little Lemon restaurant. In particular, the owners of Little Lemon want to extend the book a table functionality on the Little Lemon website</h4>
+<h4>The capstone project is based on a scenario involving the Little Lemon restaurant. In particular, the owners of Little Lemon want to extend the book a table functionality on the Little Lemon website. This backend application provides a web API that enables users to book a table at the Little Lemon restaurant.
+</h4>
 
 <h3>Api list:</h3>
 This also includes djoser auth/ endpoints provided by the djoser library.
